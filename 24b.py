@@ -98,7 +98,6 @@ for i in range(NUM_DAYS):
                 next_tiles_d[n] = 'white'
 
         num_black = sum([tiles_d[n] == 'black' for n in neighbors if n in tiles_d])
-        # print(f"Tile {k} is {tiles_d[k]} and has {num_black} black neighbors")
 
         if tiles_d[k] == 'black' and (num_black == 0 or num_black > 2):
             next_tiles_d[k] = 'white'
